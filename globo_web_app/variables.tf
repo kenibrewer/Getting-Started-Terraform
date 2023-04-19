@@ -45,3 +45,13 @@ variable company {
     description = "Company tag"
     default = "Globomantics"
 }
+
+variable project {
+    type = string
+    description = "Project tag"
+}
+
+variable billing_code {
+    type = string
+    description = "Billing Code tag"
+}
