@@ -16,10 +16,10 @@ variable enable_dns_hostnames {
     description = "Enable DNS hostnames in vpc"
 }
 
-variable subnet_cidr_block {
-    type = string
-    description = "CIDR block for the subnet"
-    default = "10.0.0.0/24"
+variable vpc_subnets_cidr_block {
+    type = list(string)
+    description = "CIDR block for the subnets in VPC"
+    default = ["10.0.0.0/24", "10.0.1.0/24"]
 }
 
 variable subnet_map_public_ip {
